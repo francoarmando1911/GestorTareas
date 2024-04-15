@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Gestor de tareas</title>
+</head>
+<body>
+<main class="contenedor">
+    <article class="creador-tareas">
+        <div class="centrado">
+            <h1>Crear tarea</h1>
+        </div>
+
+        <form action="">
+            <label for="titulo">Titulo</label><br>
+            <input type="text" id="titulo" required><br>
+
+            <label for="descripcion">Descripción</label><br>
+            <textarea name="descripcion" cols="30" rows="10" id="descripcion" required></textarea><br>
+
+            <label for="">Fecha</label><br>
+            <input type="date" id="fecha" required><br>
+            <div class="centrado flex">
+                <button class="boton-agragar" type="button" onclick="crearTarea()">Agregar</button><br>
+                <button class="boton-eliminar" type="reset">Restablecer</button>
+            </div>
+        </form>
+    </article>
+
+    <section classs="table-tareas">
+        <table>
+            <thead>
+            <tr class="separado">
+                <td>Titulo</td>
+                <td>Descripción</td>
+                <td>Fecha</td>
+                <td>Estado</td>
+                <td>Confirmar</td>
+                <td>Eliminar</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><p id="t1"></p></td>
+                <td><p id="d1"></p></td>
+                <td><p id="f1"></p></td>
+                <td><p id="e1"></p></td>
+                <td><p id="con1"></p></td>
+                <td><p id="eli1"></p></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<script type="text/javascript" src="/static/tareas.js"></script>
+
+</body>
+</html>

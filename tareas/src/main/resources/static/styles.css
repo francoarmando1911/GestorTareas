@@ -1,0 +1,75 @@
+/* generales */
+body{
+    font-size: 1.5rem;
+}
+main{
+    padding: 5rem 2rem;
+}
+
+table{
+    border: .1rem solid #000000;
+}
+
+td{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+/* utilidades  */
+.centrado{
+    text-align: center;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* especificas */
+.contenedor{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.creador-tareas{
+    border: .1rem solid #000000;
+    border-radius: 2rem;
+    background-color:rgb(196, 194, 194);
+    padding: 1rem 1rem;
+    flex-basis: calc(33.33% - 5rem);
+}
+
+.table-tareas{
+    flex-basis: calc(33.33% - 5rem);
+}
+
+.boton-agragar{
+    background-color: cadetblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.boton-confirmar{
+    background-color:darkgreen;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.boton-eliminar{
+    background-color:brown;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
